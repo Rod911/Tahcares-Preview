@@ -183,9 +183,9 @@ function contactCarousel() {
 
 
 //=== History Carousel ===
-function certificatesCarousel() {
-    if ($('.certificates').length) {
-        $('.certificates').owlCarousel({
+function galleryCarousel() {
+    if ($('.gallery').length) {
+        $('.gallery').owlCarousel({
             loop:true,
             margin:30,
             nav:false,
@@ -202,16 +202,16 @@ function certificatesCarousel() {
                     items:1
                 },
                 800:{
-                    items:2
+                    items:1
                 },
                 1024:{
-                    items:3
+                    items:2
                 },
                 1100:{
-                    items:3
+                    items:2
                 },
                 1200:{
-                    items:4
+                    items:3
                 }
             }
         })
@@ -699,7 +699,7 @@ jQuery(document).on('ready', function () {
         countDownTimer ();
         contactCarousel ();
         cartTouchSpin ();
-        certificatesCarousel ();
+        galleryCarousel ();
         projectCarousel ();
         serviceCarousel ();
         prettyPhoto ();

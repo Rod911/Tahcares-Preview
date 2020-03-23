@@ -27,8 +27,8 @@
 </head>
 
 <body>
-    <div class="boxed_wrapper">
 
+    <div class="boxed_wrapper">
         <!--Start Preloader -->
         <div class="preloader"></div>
         <!--End Preloader -->
@@ -63,6 +63,7 @@
         <!--End top bar area-->
 
         <!--Start mainmenu area-->
+        <!-- <section class="mainmenu-area stricky"> -->
         <section class="mainmenu-area stricky">
             <div class="container">
                 <div class="row">
@@ -73,8 +74,8 @@
                                 <img src="images/resources/logo.png" alt="Awesome Logo">
                             </a>
                             <!-- <div class="smile">
-                        <img src="images/resources/smile.png" alt="">
-                    </div> -->
+                                <img src="images/resources/smile.png" alt="">
+                            </div> -->
                         </div>
                         <!--End logo-->
                         <!--Start mainmenu-->
@@ -89,29 +90,29 @@
                             </div>
                             <div class="navbar-collapse collapse clearfix">
                                 <ul class="navigation clearfix">
-                                    <li class="current"><a href="index.html">Home</a></li>
-                                    <li class="dropdown"><a href="about.html">About Us</a>
+                                    <li class="section-link current"><a href="#home">Home</a></li>
+                                    <li class="section-link dropdown"><a href="#about">About Us</a>
                                         <ul>
-                                            <li><a href="about.html">Our Story</a></li>
-                                            <li><a href="about.html">Philosophy</a></li>
+                                            <li><a href="#">Our Story</a></li>
+                                            <li><a href="#">Philosophy</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="services.html">Services</a>
-                                    <li class="dropdown"><a href="events.html">Infrastructure</a>
-                                        <ul>
+                                    <li class="section-link"><a href="#services">Services</a>
+                                    <li class="dropdown"><a href="#">Infrastructure</a>
+                                        <!-- <ul>
                                             <li><a href="events.html">Overview</a></li>
                                             <li><a href="event-single.html">Images</a></li>
-                                        </ul>
+                                        </ul> -->
                                     </li>
-                                    <li class="dropdown"><a href="blog-default.html">Blog</a>
-                                    <li class="dropdown"><a href="blog-default.html">Gallery</a>
+                                    <li class="section-link"><a href="#testimonials">Testimonials</a></li>
+                                    <li class="section-link"><a href="#blog">Blog</a>
+                                    <li class="section-link dropdown"><a href="#gallery">Gallery</a>
                                         <ul>
-                                            <li><a href="blog-default.html">Albums</a></li>
-                                            <li><a href="blog-default.html">Videos</a></li>
+                                            <li><a href="#">Albums</a></li>
+                                            <li><a href="#">Videos</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">Testimonials</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li class="section-link"><a href="#contact">Contact</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -132,7 +133,7 @@
                         </ul>
                     </div> -->
                             <div class="appointment-button">
-                                <a class="thm-btn bgclr-1" href="#">Appointment</a>
+                                <a class="thm-btn bgclr-1" href="#appointment">Appointment</a>
                             </div>
                         </div>
                         <!--End mainmenu right box-->
@@ -144,49 +145,51 @@
 
         <!--Start rev slider wrapper-->
         <section class="rev_slider_wrapper">
+            <div class="anchor" id="home"></div>
             <div id="slider1" class="rev_slider" data-version="5.0">
                 <ul>
                     <li data-transition="rs-20">
-                        <img src="images/slides/Slide-1.jpg" alt="" width="1920" height="700" data-bgposition="top center"
-                            data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
-
-                        <div class="tp-caption tp-resizeme" data-x="left" data-hoffset="0" data-y="top"
-                            data-voffset="160" data-transform_idle="o:1;"
+                        <img src="images/slides/Slide-1.jpg" alt="" width="1920" height="700"
+                            data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat"
+                            data-bgparallax="1">
+                        <div class="tp-caption tp-resizeme" data-x="center" data-hoffset="0" data-y="center"
+                            data-voffset="-135" data-transform_idle="o:1;"
                             data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;"
                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
                             data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" data-splitin="none" data-splitout="none"
                             data-start="500">
-                            <div class="slide-content-box mar-lft">
+                            <div class="slide-content-box middle-slide">
                                 <h2>Mobile Therapy</h2>
                             </div>
                         </div>
-                        <div class="tp-caption  tp-resizeme" data-x="left" data-hoffset="0" data-y="top"
-                            data-voffset="215" data-transform_idle="o:1;"
+                        <div class="tp-caption  tp-resizeme" data-x="center" data-hoffset="0" data-y="center"
+                            data-voffset="-35" data-transform_idle="o:1;"
                             data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;"
                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
                             data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" data-splitin="none" data-splitout="none"
                             data-responsive_offset="on" data-start="1500">
-                            <div class="slide-content-box mar-lft">
+                            <div class="slide-content-box middle-slide">
                                 <h1>That's what we do</h1>
                                 <!-- <p></p> -->
                             </div>
                         </div>
-                        <div class="tp-caption tp-resizeme" data-x="left" data-hoffset="0" data-y="top"
-                            data-voffset="460" data-transform_idle="o:1;"
+                        <div class="tp-caption tp-resizeme" data-x="center" data-hoffset="0" data-y="center"
+                            data-voffset="90" data-transform_idle="o:1;"
                             data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-                            data-splitin="none" data-splitout="none" data-responsive_offset="on" data-start="2500">
-                            <div class="slide-content-box mar-lft">
+                            data-splitin="none" data-splitout="none" data-responsive_offset="on" data-start="2300">
+                            <div class="slide-content-box middle-slide">
                                 <div class="button">
-                                    <a class="" href="#">Know More</a>
+                                    <a class="" href="#">Read More</a>
                                     <!-- <a class="btn-style-two" href="#">Contact Us</a> -->
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li data-transition="fade">
-                        <img src="images/slides/Slide-2.jpg" alt="" width="1920" height="700" data-bgposition="top center"
-                            data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
+                        <img src="images/slides/Slide-2.jpg" alt="" width="1920" height="700"
+                            data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat"
+                            data-bgparallax="1">
 
                         <div class="tp-caption tp-resizeme" data-x="center" data-hoffset="0" data-y="center"
                             data-voffset="-135" data-transform_idle="o:1;"
@@ -217,36 +220,45 @@
                             <div class="slide-content-box middle-slide">
                                 <div class="button">
                                     <!-- <a class="#" href="#">Our Company</a> -->
-                                    <a class="btn-style-two" href="#">Contact Us</a>
+                                    <a class="" href="#">Read More</a>
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li data-transition="fade">
-                        <img src="images/slides/Slide-3.jpg" alt="" width="1920" height="700" data-bgposition="top center"
-                            data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
-
-                        <div class="tp-caption  tp-resizeme" data-x="left" data-hoffset="0" data-y="top"
-                            data-voffset="160" data-transform_idle="o:1;"
+                        <img src="images/slides/Slide-3.jpg" alt="" width="1920" height="700"
+                            data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat"
+                            data-bgparallax="1">
+                        <div class="tp-caption tp-resizeme" data-x="center" data-hoffset="0" data-y="center"
+                            data-voffset="-135" data-transform_idle="o:1;"
                             data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;"
                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
                             data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" data-splitin="none" data-splitout="none"
-                            data-responsive_offset="on" data-start="700">
-                            <div class="slide-content-box right-slide">
+                            data-start="500">
+                            <div class="slide-content-box middle-slide">
                                 <h2>Changing lives one body</h2>
+                            </div>
+                        </div>
+                        <div class="tp-caption  tp-resizeme" data-x="center" data-hoffset="0" data-y="center"
+                            data-voffset="-35" data-transform_idle="o:1;"
+                            data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;"
+                            data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                            data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" data-splitin="none" data-splitout="none"
+                            data-responsive_offset="on" data-start="1500">
+                            <div class="slide-content-box middle-slide">
                                 <h1>Our Motto</h1>
                                 <!-- <p></p> -->
                             </div>
                         </div>
-                        <div class="tp-caption tp-resizeme" data-x="left" data-hoffset="165" data-y="top"
-                            data-voffset="450" data-transform_idle="o:1;"
+                        <div class="tp-caption tp-resizeme" data-x="center" data-hoffset="0" data-y="center"
+                            data-voffset="90" data-transform_idle="o:1;"
                             data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
                             data-splitin="none" data-splitout="none" data-responsive_offset="on" data-start="2300">
-                            <div class="slide-content-box">
+                            <div class="slide-content-box middle-slide">
                                 <div class="button">
-                                    <a class="" href="#">Our Company</a>
-                                    <a class="btn-style-two" href="#">Contact Us</a>
+                                    <!-- <a class="" href="#">Our Company</a> -->
+                                    <a class="" href="#">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -258,6 +270,7 @@
 
         <!--Start call to action area-->
         <section class="callto-action-area sec-padding">
+            <div class="anchor" id="about"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
@@ -323,6 +336,7 @@
 
         <!--Start service area-->
         <section class="service-area">
+            <div class="anchor" id="services"></div>
             <div class="container">
                 <div class="sec-title">
                     <!-- <h3>What We Do</h3> -->
@@ -468,6 +482,7 @@
 
         <!--Start testimonial area-->
         <section class="testimonial-area">
+            <div class="anchor" id="testimonials"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -542,8 +557,9 @@
 
         <!--Start latest blog area-->
         <section class="latest-blog-area sec-padding">
+            <div class="anchor" id="blog"></div>
             <div class="container">
-                <div class="sec-title text-center">
+                <div class="sec-title">
                     <!-- <h3>From Blog</h3> -->
                     <h1>Blog</h1>
                 </div>
@@ -633,10 +649,11 @@
 
         <!--Start consultations area-->
         <section class="consultations-area" style="background-image:url(images/resources/consultation-bg.jpg);">
+            <div class="anchor" id="appointment"></div>
             <div class="container wow zoomIn" data-wow-delay="100ms" data-wow-duration="900ms">
                 <div class="sec-title text-center">
                     <!-- <h3>Lets Talk</h3> -->
-                    <h1>Consult Us</h1>
+                    <h1>Appointment</h1>
                 </div>
                 <div class="row">
                     <div class="col-md-1 col-lg-2"></div>
@@ -717,122 +734,87 @@
             </div>
         </div> -->
 
-        <!--Start certificates area-->
-        <section class="certificates-area">
+        <!--Start gallery area-->
+        <section class="gallery-area">
+            <div class="anchor" id="gallery"></div>
             <div class="container">
-                <div class="sec-title text-center">
+                <div class="sec-title">
                     <!-- <h3>Achivements</h3> -->
                     <h1>Gallery</h1>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="certificates">
+                        <div class="gallery">
                             <!--Start single item-->
                             <div class="single-item">
                                 <a href="#">
                                     <div class="single-item">
-                                        <img src="images/certificates/1.jpg" alt="Awesome Image">
+                                        <img src="images/blog/latest-blog-1.jpg" alt="Awesome Image">
                                     </div>
                                 </a>
+                                <div class="gallery-label">
+                                    <h4 class="gallery-title">Album 1</h4>
+                                </div>
                             </div>
                             <!--End single item-->
                             <!--Start single item-->
                             <div class="single-item">
                                 <a href="#">
                                     <div class="single-item">
-                                        <img src="images/certificates/2.jpg" alt="Awesome Image">
+                                        <img src="images/blog/latest-blog-2.jpg" alt="Awesome Image">
                                     </div>
                                 </a>
+                                <div class="gallery-label">
+                                    <h4 class="gallery-title">Album 2</h4>
+                                </div>
                             </div>
                             <!--End single item-->
                             <!--Start single item-->
                             <div class="single-item">
                                 <a href="#">
                                     <div class="single-item">
-                                        <img src="images/certificates/3.jpg" alt="Awesome Image">
+                                        <img src="images/blog/latest-blog-3.jpg" alt="Awesome Image">
                                     </div>
                                 </a>
+                                <div class="gallery-label">
+                                    <h4 class="gallery-title">Album 3</h4>
+                                </div>
                             </div>
                             <!--End single item-->
                             <!--Start single item-->
                             <div class="single-item">
                                 <a href="#">
                                     <div class="single-item">
-                                        <img src="images/certificates/4.jpg" alt="Awesome Image">
+                                        <img src="images/blog/latest-blog-1.jpg" alt="Awesome Image">
                                     </div>
                                 </a>
+                                <div class="gallery-label">
+                                    <h4 class="gallery-title">Album 4</h4>
+                                </div>
                             </div>
                             <!--End single item-->
                             <!--Start single item-->
                             <div class="single-item">
                                 <a href="#">
                                     <div class="single-item">
-                                        <img src="images/certificates/1.jpg" alt="Awesome Image">
+                                        <img src="images/blog/latest-blog-2.jpg" alt="Awesome Image">
                                     </div>
                                 </a>
+                                <div class="gallery-label">
+                                    <h4 class="gallery-title">Album 5</h4>
+                                </div>
                             </div>
                             <!--End single item-->
                             <!--Start single item-->
                             <div class="single-item">
                                 <a href="#">
                                     <div class="single-item">
-                                        <img src="images/certificates/2.jpg" alt="Awesome Image">
+                                        <img src="images/blog/latest-blog-3.jpg" alt="Awesome Image">
                                     </div>
                                 </a>
-                            </div>
-                            <!--End single item-->
-                            <!--Start single item-->
-                            <div class="single-item">
-                                <a href="#">
-                                    <div class="single-item">
-                                        <img src="images/certificates/3.jpg" alt="Awesome Image">
-                                    </div>
-                                </a>
-                            </div>
-                            <!--End single item-->
-                            <!--Start single item-->
-                            <div class="single-item">
-                                <a href="#">
-                                    <div class="single-item">
-                                        <img src="images/certificates/4.jpg" alt="Awesome Image">
-                                    </div>
-                                </a>
-                            </div>
-                            <!--End single item-->
-                            <!--Start single item-->
-                            <div class="single-item">
-                                <a href="#">
-                                    <div class="single-item">
-                                        <img src="images/certificates/1.jpg" alt="Awesome Image">
-                                    </div>
-                                </a>
-                            </div>
-                            <!--End single item-->
-                            <!--Start single item-->
-                            <div class="single-item">
-                                <a href="#">
-                                    <div class="single-item">
-                                        <img src="images/certificates/2.jpg" alt="Awesome Image">
-                                    </div>
-                                </a>
-                            </div>
-                            <!--End single item-->
-                            <!--Start single item-->
-                            <div class="single-item">
-                                <a href="#">
-                                    <div class="single-item">
-                                        <img src="images/certificates/3.jpg" alt="Awesome Image">
-                                    </div>
-                                </a>
-                            </div>
-                            <!--End single item-->
-                            <!--Start single item-->
-                            <div class="single-item">
-                                <a href="#">
-                                    <div class="single-item">
-                                        <img src="images/certificates/4.jpg" alt="Awesome Image">
-                                    </div>
-                                </a>
+                                <div class="gallery-label">
+                                    <h4 class="gallery-title">Album 6</h4>
+                                </div>
                             </div>
                             <!--End single item-->
                         </div>
@@ -840,10 +822,11 @@
                 </div>
             </div>
         </section>
-        <!--End certificates area-->
+        <!--End gallery area-->
 
         <!--Start footer area-->
         <footer class="footer-area">
+            <div class="anchor" id="contact"></div>
             <div class="container">
                 <div class="row">
                     <!--Start single footer widget-->
@@ -1002,7 +985,8 @@
                         </ul>
                     </div>
                     <div class="col-md-3">
-                        <p class="powered-by">Powered by <a href="#"><img src="./images/resources/26_footer.png" alt="Steed 26" class="steed-logo"></a></p>
+                        <p class="powered-by">Powered by <a href="#"><img src="./images/resources/26_footer.png"
+                                    alt="Steed 26" class="steed-logo"></a></p>
                     </div>
                 </div>
             </div>
@@ -1032,11 +1016,6 @@
     <script src="js/jquery.mixitup.min.js"></script>
     <!-- easing -->
     <script src="js/jquery.easing.min.js"></script>
-    <!-- gmap helper -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHzPSV2jshbjI8fqnC_C4L08ffnj5EN3A"></script>
-    <!--gmap script-->
-    <script src="js/gmaps.js"></script>
-    <script src="js/map-helper.js"></script>
     <!-- fancy box -->
     <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/jquery.appear.js"></script>
@@ -1075,8 +1054,7 @@
     <!-- thm custom script -->
     <script src="js/custom.js"></script>
 
-
-
+    <script src="js/scripts.js"></script>
 
 
 </body>

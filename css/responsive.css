@@ -1115,7 +1115,7 @@
    Certificates Area style
 =============================================
 ***/      
-.certificates-area .owl-controls {
+.gallery-area .owl-controls {
     position: absolute;
     left: 0px;
     top: -40px;

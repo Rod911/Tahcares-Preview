@@ -216,7 +216,7 @@ button {
   width: 100%;
   min-width: 320px;
   min-height: 400px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /*________________Preloader_______________ */
@@ -264,7 +264,7 @@ button {
   margin: 0;
   width: 100%;
   z-index: 10000;
-  background: #f7f7f7;
+  background: #fff;
   z-index: 99999;
   -webkit-animation-name: menu_sticky;
   animation-name: menu_sticky;
@@ -272,6 +272,7 @@ button {
   animation-duration: 0.6s;
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 }
 .mainmenu-area.stricky-fixed .logo .smile {
   display: none;
@@ -297,28 +298,24 @@ button {
 /* Scroll To Top styles */
 .scroll-to-top {
   background: transparent;
-  border: 1px solid #ff6d10;
   bottom: 25px;
   color: #ff6d10;
   cursor: pointer;
   display: none;
-  font-size: 30px;
   font-weight: normal;
   height: 45px;
-  line-height: 48px;
   position: fixed;
   right: 15px;
   text-align: center;
   transition: all 300ms ease 0s;
   width: 45px;
   z-index: 99999;
-  -webkit-box-shadow: 0px 8px 23px -6px rgba(27, 27, 27, 1);
-  -moz-box-shadow: 0px 8px 23px -6px rgba(27, 27, 27, 1);
-  box-shadow: 0px 8px 23px -6px rgba(27, 27, 27, 1);
+  font-size: 45px;
+  border-radius: 50%;
 }
 .scroll-to-top:hover {
-  background: #ff6d10;
   color: #fff;
+  background-color: #ff6d10;
 }
 
 /*Form validation styles */
@@ -818,6 +815,7 @@ select:focus {
 }
 .rev_slider_wrapper .slide-content-box.middle-slide h1 {
   text-align: center;
+  line-height: 80px !important;
 }
 .rev_slider_wrapper .slide-content-box.middle-slide p {
   text-align: center;
@@ -929,7 +927,7 @@ select:focus {
   position: relative;
   overflow: hidden;
 }
-.service-area:before {
+/* .service-area:before {
   content: "\f0d7";
   font-family: FontAwesome;
   position: absolute;
@@ -943,7 +941,7 @@ select:focus {
   text-align: center;
   line-height: 50px;
   color: #ffffff;
-}
+} */
 .single-service-item {
   position: relative;
   overflow: hidden;
@@ -1407,7 +1405,7 @@ select:focus {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 70px;
+  padding: 70px 0;
   position: relative;
   z-index: 1;
 }
@@ -1433,7 +1431,7 @@ select:focus {
   padding-bottom: 70px; */
   padding: 50px 40px;
   border: 1px solid #f5f5f5;
-  margin-bottom: -70px;
+  /* margin-bottom: -70px; */
   box-shadow: 0 0 4rem rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
@@ -1484,8 +1482,9 @@ select:focus {
 }
 .consultations-area #consultations-form button {
   display: block;
-  width: 100%;
-  padding: 15px 0 13px;
+  /* width: 100%; */
+  margin: auto;
+  padding: 15px 30px 13px;
 }
 
 .consultations-area .contact-info {
@@ -1544,36 +1543,48 @@ select:focus {
     Certificates Area style
 =============================================
 ***/
-.certificates-area {
+.gallery-area {
   background: #ffffff;
   padding-bottom: 70px;
 }
-.certificates-area .container {
+.gallery-area .container {
   padding-top: 140px;
 }
-/* .certificates-area .sec-title {
+/* .gallery-area .sec-title {
 } */
-.certificates-area .certificates .single-item {
-  height: 195px;
+.gallery-area .gallery .single-item {
+  height: 310px;
   width: 100%;
   -webkit-transition: all 300ms ease-in 0s;
   transition: all 300ms ease-in 0s;
   text-align: center;
   line-height: 195px;
+  position: relative;
 }
-/* .certificates-area .certificates .single-item a {
+/* .gallery-area .gallery .single-item a {
 }
-.certificates-area .certificates .single-item:hover {
+.gallery-area .gallery .single-item:hover {
 } */
-.certificates-area .certificates .single-item:hover img {
+.gallery-area .gallery .single-item:hover img {
   opacity: 0.9;
 }
-.certificates-area .owl-controls {
+.gallery-area .single-item .gallery-label {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: rgba(34, 36, 38, 0.85);
+}
+.gallery-area .single-item .gallery-title {
+  color: #ff6d10;
+  font-size: 2rem;
+}
+.gallery-area .owl-controls {
   position: absolute;
   right: -5px;
   top: -77px;
 }
-.certificates-area .owl-dots .owl-dot {
+.gallery-area .owl-dots .owl-dot {
   background-image: none;
   width: 12px;
   height: 12px;
@@ -1588,10 +1599,10 @@ select:focus {
   -moz-border-radius: 50%;
   transition: all 300ms ease;
 }
-.certificates-area .owl-dots .owl-dot span {
+.gallery-area .owl-dots .owl-dot span {
   display: none;
 }
-.certificates-area .owl-dots .owl-dot.active {
+.gallery-area .owl-dots .owl-dot.active {
   width: 15px;
   background: #ff6d10;
   border-color: #ff6d10;
@@ -6149,6 +6160,13 @@ select:focus {
   color: #ff6d10;
   transition: 0.5s ease;
 }
+section {
+  position: relative;
+}
+/* .anchor {
+  position: absolute;
+  top: 0px;
+} */
 .powered-by {
   text-align: right;
   margin: 0;
