@@ -6175,3 +6175,26 @@ img.steed-logo {
   width: 4.5rem;
   margin-left: 0.5rem;
 }
+#slider1 li {
+  text-align: center;
+}
+@media(max-width: 768px) {
+  section.top-bar-area {
+    display: none;
+  }
+  .rev_slider_wrapper .slide-content-box.middle-slide h2 {
+    font-size: 16px !important;
+  }
+  .rev_slider_wrapper .slide-content-box.middle-slide h1 {
+    font-size: 20px !important;
+  }
+  .rev_slider_wrapper .slide-content-box .button a {
+    font-size: 11px !important;
+  }
+  .rev_slider_wrapper .slide-content-box.middle-slide h2,
+  .rev_slider_wrapper .slide-content-box.middle-slide h1,
+  .rev_slider_wrapper .slide-content-box .button a {
+    line-height: 1.4em !important;
+  }
+
+}
