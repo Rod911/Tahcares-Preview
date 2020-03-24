@@ -181,6 +181,7 @@ button {
   margin-top: -3px;
   padding-bottom: 27px;
   position: relative;
+  text-align: center;
 }
 .sec-title.pdb-50 {
   padding-bottom: 50px;
