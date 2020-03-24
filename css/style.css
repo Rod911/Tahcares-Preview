@@ -928,7 +928,26 @@ select:focus {
   margin: 5px 0;
   padding: 12px 35px 10px;
 }
-
+.callto-action-area a {
+  border: 2px solid #ff6d10;
+  background: #ff6d10;
+  padding: 9px 30px 8px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  border-radius: 30px;
+  display: inline-block;
+  margin-top: 3rem;
+  transition: ease 0.25s;
+  transition-property: background-color, color;
+}
+.callto-action-area a:hover,
+.callto-action-area a:focus {
+  background-color: #fff;
+  color: #ff6d10;
+}
 /*** 
 =============================================
     Service Area style
