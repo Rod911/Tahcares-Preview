@@ -6364,4 +6364,7 @@ img.steed-logo {
   .testimonial-area .sec-title h1 {
     text-align: center;
   }
+  .menu-fixed {
+    margin-top: 0;
+  }
 }
