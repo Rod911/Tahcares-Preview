@@ -35,7 +35,11 @@
                 $('a[href*=#' + i + ']').parents('li.section-link').addClass('current');
             }
         }
-        
+        if (scroll_pos >= 50) {
+            document.body.classList.add('menu-fixed');
+        } else {
+            document.body.classList.remove('menu-fixed');
+        }
     }
 
     window.addEventListener('scroll', function (e) {
@@ -67,4 +71,12 @@
         })
     });
     $('.banner-slider').slick();
+    var maxTesimonialHeight = 0;
+    document.querySelectorAll('.single-testimonial-item .text-holder').forEach(function (item) {
+        var height = $(item).outerHeight();
+        maxTesimonialHeight = (height > maxTesimonialHeight ? height : maxTesimonialHeight);
+    });
+    document.querySelectorAll('.single-testimonial-item .text-holder').forEach(function (item) {
+        item.style.height = maxTesimonialHeight + "px";
+    })
 })();

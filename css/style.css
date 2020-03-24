@@ -268,7 +268,10 @@ button {
     margin-top: 0;
   }
 }
-.mainmenu-area.stricky-fixed {
+.menu-fixed {
+  margin-top: 100px;
+}
+.menu-fixed .mainmenu-area {
   position: fixed;
   top: 0;
   left: 0;
@@ -277,16 +280,13 @@ button {
   z-index: 10000;
   background: #fff;
   z-index: 99999;
-  -webkit-animation-name: menu_sticky;
+  /* -webkit-animation-name: menu_sticky;
   animation-name: menu_sticky;
   -webkit-animation-duration: 0.6s;
   animation-duration: 0.6s;
   -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-out; */
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
-}
-.mainmenu-area.stricky-fixed .logo .smile {
-  display: none;
 }
 /*
 .mainmenu-area.stricky-fixed .logo {
@@ -1200,7 +1200,7 @@ select:focus {
 =============================================
 ***/
 .testimonial-area {
-  background: #f5f4f3;
+  background: #eaeaea;
   padding: 70px 0 40px;
 }
 .testimonial-area .more-button {
@@ -6360,5 +6360,8 @@ img.steed-logo {
   .powered-by {
     text-align: center;
     padding: 1rem 0;
+  }
+  .testimonial-area .sec-title h1 {
+    text-align: center;
   }
 }
