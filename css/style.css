@@ -6275,7 +6275,20 @@ section {
   position: absolute;
   top: -86px;
 }
+.resp-only {
+  display: none;
+}
+.non-resp-only {
+  display: block;
+}
 @media (max-width: 767px) {
+  .resp-only {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .non-resp-only {
+    display: none;
+  }
   section.top-bar-area {
     display: none;
   }
