@@ -6268,11 +6268,14 @@ img.steed-logo {
   background-color: #fff;
   color: #ff6d10;
 }
+section {
+  position: relative;
+}
+.anchor {
+  position: absolute;
+  top: -86px;
+}
 @media (max-width: 767px) {
-  .anchor {
-    position: absolute;
-    top: -86px;
-  }
   section.top-bar-area {
     display: none;
   }
