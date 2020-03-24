@@ -479,7 +479,7 @@ select:focus {
 }
 .mainmenu-area .logo {
   display: inline-block;
-  padding-right: 40px;
+  padding-right: 20px;
   padding-top: 26px;
   padding-bottom: 26px;
   position: relative;
@@ -502,6 +502,9 @@ select:focus {
 .main-menu {
   float: left;
   position: relative;
+}
+.navbar {
+  margin-bottom: 0;
 }
 .main-menu .navbar-collapse {
   padding: 0px;
@@ -6178,9 +6181,69 @@ img.steed-logo {
 #slider1 li {
   text-align: center;
 }
-@media(max-width: 768px) {
+.scroll-to-top {
+  z-index: 1000;
+}
+@media(max-width: 767px) {
   section.top-bar-area {
     display: none;
+  }
+  .mainmenu-area .logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .main-menu {
+    float: right !important;
+    width: auto;
+  }
+  .main-menu .navbar-header .navbar-toggle {
+    border-color: #ff6d10;
+  }
+  .main-menu .navbar-header .navbar-toggle .icon-bar {
+    background-color: #ff6d10;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 86px;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: 0.3s ease transform;
+  }
+  .navbar.open {
+    transform: translateX(0);
+  }
+  .navbar ul.navigation {
+    margin: 3rem 0;
+    padding: 0 2rem;
+    float: right;
+    text-align: right;
+  }
+  .navbar ul.navigation li {
+    display: block;
+    float: none;
+  }
+  .navbar ul.navigation a {
+    padding: 0.8rem 0;
+  }
+  .navbar ul.navigation .drop-down a {
+    pointer-events: none;
+  }
+  .main-menu .navigation > li > ul {
+    position: static;
+    overflow: hidden;
+    width: auto;
+    transform: scaleY(0);
+    transform-origin: top;
+    height: 0;
+  }
+  .main-menu .navigation > li:hover > ul,
+  .main-menu .navigation > li:focus > ul {
+    transform: scaleY(1);
+    height: auto;
   }
   .rev_slider_wrapper .slide-content-box.middle-slide h2 {
     font-size: 16px !important;
@@ -6196,5 +6259,15 @@ img.steed-logo {
   .rev_slider_wrapper .slide-content-box .button a {
     line-height: 1.4em !important;
   }
-
+  .footer-bottom-area .footer-social-links {
+    float: none;
+  }
+  .footer-bottom-area .footer-social-links li {
+    display: inline-block;
+    float: none;
+  }
+  .powered-by {
+    text-align: center;
+    padding: 1rem 0;
+  }
 }

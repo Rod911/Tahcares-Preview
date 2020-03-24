@@ -50,4 +50,15 @@
             ticking = true;
         }
     });
+    var navbar = document.querySelector('.navbar');
+    document.querySelectorAll('.navbar-toggle').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            navbar.classList.toggle('open');
+        });
+    });
+    document.querySelectorAll('.section-link:not(.dropdown) a').forEach(function (link) {
+        link.addEventListener('click', function () {
+            navbar.classList.remove('open');
+        });
+    });
 })();
