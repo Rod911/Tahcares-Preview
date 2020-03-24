@@ -1,28 +1,33 @@
 
 'use strict';
-(function () {
+function ready() {
     'use strict';
     var section = document.querySelectorAll(".anchor");
     var sections = {};
     var i = 0;
-    Array.prototype.forEach.call(section, function (e) {
-        sections[e.id] = getPosition(e).y;
-    });
+    setTimeout(() => {
 
+        Array.prototype.forEach.call(section, function (e) {
+            sections[e.id] = getPosition(e);
+        });
+
+    }, 100);
     function getPosition(element) {
-        var xPosition = 0;
-        var yPosition = 0;
+        // var xPosition = 0;
+        // var yPosition = 0;
 
-        while (element) {
-            xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
-            yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
-            element = element.offsetParent;
-        }
+        // while (element) {
+        //     xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
+        //     yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
+        //     element = element.offsetParent;
+        // }
 
-        return {
-            x: xPosition,
-            y: yPosition
-        };
+        // return {
+        //     x: xPosition,
+        //     y: yPosition
+        // };
+
+        return (window.pageYOffset + element.getBoundingClientRect().top);
     }
 
     let last_known_scroll_position = 0;
@@ -30,11 +35,12 @@
 
     function doSomething(scroll_pos) {
         for (i in sections) {
-            if (sections[i] <= (scroll_pos - 100)) {
+            if (sections[i] <= (scroll_pos + 50 )) {
                 $('.current').removeClass('current');
                 $('a[href*=#' + i + ']').parents('li.section-link').addClass('current');
             }
         }
+
         if (scroll_pos >= 50) {
             document.body.classList.add('menu-fixed');
         } else {
@@ -79,4 +85,10 @@
     document.querySelectorAll('.single-testimonial-item .text-holder').forEach(function (item) {
         item.style.height = maxTesimonialHeight + "px";
     })
-})();
+};
+
+// document.addEventListener('DOMContentLoaded', (event) => {
+//     ready();
+// })
+
+$(window).bind('load', ready());
