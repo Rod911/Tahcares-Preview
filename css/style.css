@@ -6200,6 +6200,16 @@ img.steed-logo {
   background-position: center;
   padding: 200px 0;
 }
+.banner-slider .banner-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  z-index: 0;
+}
 .banner-item h2 {
   color: #e9d80c;
   line-height: 40px;
@@ -6210,7 +6220,7 @@ img.steed-logo {
   letter-spacing: 0px;
   font-weight: 700;
   font-size: 60px;
-  color: #fff
+  color: #fff;
 }
 .banner-item a {
   border: 2px solid #ff6d10;
@@ -6224,7 +6234,19 @@ img.steed-logo {
   border-radius: 30px;
   display: inline-block;
   margin-top: 3rem;
+  transition: ease 0.25s;
+  transition-property: background-color, color;
 }
+.banner-item a:hover {
+  background-color: #fff;
+  color: #ff6d10;
+}
+.banner-item h2, 
+.banner-item h1, 
+.banner-item a{
+  z-index: 2;
+  position: relative;
+} 
 @media (max-width: 767px) {
   .anchor {
     position: absolute;
