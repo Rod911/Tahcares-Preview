@@ -35,7 +35,7 @@ function ready() {
 
     function doSomething(scroll_pos) {
         for (i in sections) {
-            if (sections[i] <= (scroll_pos + 50 )) {
+            if (sections[i] <= (scroll_pos + 50)) {
                 $('.current').removeClass('current');
                 $('a[href*=#' + i + ']').parents('li.section-link').addClass('current');
             }

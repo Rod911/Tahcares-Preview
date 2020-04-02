@@ -271,6 +271,7 @@ function serviceCarousel() {
             dots: false,
             autoplayHoverPause:false,
             autoplay: 10000,
+            stagePadding: 10,
             smartSpeed: 700,
             navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
             responsive:{
