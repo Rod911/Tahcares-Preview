@@ -983,13 +983,13 @@ select:focus {
   overflow-x: hidden;
 } */
 .service-area .owl-stage-outer {
-    padding: 1rem 0;
+  padding: 1rem 0;
 }
 .single-service-item {
   position: relative;
   overflow: hidden;
   display: block;
-  box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
 }
 /* .single-service-item .img-holder{} */
@@ -1075,7 +1075,7 @@ select:focus {
 }
 .single-service-item .text-holder-1 h3 {
   color: #404040;
-  font-size: 18px;
+  font-size: 1.6rem;
   font-weight: 600;
   margin: 13px 0 12px;
 }
@@ -6304,7 +6304,6 @@ section {
   text-align: center;
 }
 .news-block-head {
-  background-color: #ff6d10;
   color: #fff;
   padding: 3rem;
   height: 150px;
@@ -6312,6 +6311,15 @@ section {
 }
 .news-block {
   margin-top: -15rem;
+}
+.news-blocks .news-block:nth-child(1) .news-block-head {
+  background-color: #ff6d10;
+}
+.news-blocks .news-block:nth-child(2) .news-block-head {
+  background-color: #18a9b3;
+}
+.news-blocks .news-block:nth-child(3) .news-block-head {
+  background-color: #ce1e42;
 }
 .news-block-img {
   padding: 10rem;
@@ -6424,7 +6432,10 @@ section.help-area .help-subtitle h3 {
 .team-image {
   position: relative;
 }
-
+.team-image img {
+  display: block;
+  margin: auto;
+}
 .team-img-bg-over {
   position: absolute;
   top: 0;
@@ -6463,7 +6474,12 @@ section.help-area .help-subtitle h3 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(to top, #dd4b39 10%, transparent 70%);
+  background-image: linear-gradient(
+    to top,
+    rgb(255, 109, 16) 20%,
+    rgba(255, 109, 16, 0.12) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
   z-index: 0;
   opacity: 0;
   transition: ease-in-out 0.3s;
@@ -6476,12 +6492,18 @@ section.help-area .help-subtitle h3 {
   color: #555;
   font-weight: 600;
   margin-bottom: 2rem;
+  line-height: 1.4;
+  transition: ease-in-out 0.3s color;
+}
+.team-wrap:hover .team-title {
+  color: #fff;
 }
 
 .team-desg {
-  color: #18aab4;
+  color: #107cff;
   font-size: 1.6rem;
   margin-bottom: 2rem;
+  transition: ease-in-out 0.3s color;
 }
 
 .social-icon {
@@ -6501,7 +6523,7 @@ section.help-area .help-subtitle h3 {
   opacity: 1;
   transform: translateY(0);
 }
-.help-links a{
+.help-links a {
   color: #888;
 }
 .help-links a:hover {
