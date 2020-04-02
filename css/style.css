@@ -149,7 +149,7 @@ li {
   padding: 0;
 }
 .sec-padding {
-  padding: 70px 0;
+  padding: 100px 0;
 }
 button {
   border: none;
@@ -180,8 +180,8 @@ button {
   background-color: #18aab4;
 }
 .sec-title {
-  margin-top: -3px;
-  padding-bottom: 27px;
+  /* margin-top: -3px; */
+  /* padding-bottom: 27px; */
   position: relative;
   color: #fff;
 }
