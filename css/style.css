@@ -6653,4 +6653,10 @@ section.help-area .help-subtitle h3 {
   .menu-fixed {
     margin-top: 0;
   }
+  .news-bg {
+    padding: 10rem 0;
+  }
+  .news-block {
+    margin-top: 2rem;
+  }
 }
