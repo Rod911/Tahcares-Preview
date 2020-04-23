@@ -7,26 +7,12 @@ function ready() {
     var i = 0;
     setTimeout(() => {
 
-        Array.prototype.forEach.call(section, function (e) {
+        section.forEach(function (e) {
             sections[e.id] = getPosition(e);
         });
 
     }, 100);
     function getPosition(element) {
-        // var xPosition = 0;
-        // var yPosition = 0;
-
-        // while (element) {
-        //     xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
-        //     yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
-        //     element = element.offsetParent;
-        // }
-
-        // return {
-        //     x: xPosition,
-        //     y: yPosition
-        // };
-
         return (window.pageYOffset + element.getBoundingClientRect().top);
     }
 
