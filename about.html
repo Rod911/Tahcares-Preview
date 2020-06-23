@@ -42,9 +42,134 @@
             display: inline-block;
             font-size: 1.5rem;
         }
+
+        .about-blocks {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            display: flex;
+        }
+
+        .about-block {
+            text-align: left;
+            width: 50%;
+            max-width: 100%;
+            display: block;
+        }
+
+        .about-block.bg-1 .block-head {
+            background-color: hsl(194, 100%, 75%);
+        }
+
+        .about-block.bg-2 .block-head {
+            background-color: hsl(41, 100%, 75%);
+        }
+
+        .about-block+.about-block {
+            margin-left: 25px;
+        }
+
+        .block-body h4 {
+            margin-bottom: 10px;
+        }
+
+        .extra-block {
+            width: 650px;
+            margin: 30px auto;
+            max-width: 100%;
+        }
+
+        .extra-block h4 {
+            margin-bottom: 10px;
+        }
+
+        .full-panel-image {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .full-panel-image .panel-image {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+
+        .full-panel-image.image-left .panel-image {
+            left: 0;
+            right: 50%;
+        }
+
+        .full-panel-image.image-right .panel-image {
+            left: 50%;
+            right: 0;
+        }
+
+        .full-panel-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .follow-container {
+            width: 650px;
+            max-width: 100%;
+            margin: auto;
+            text-align: center;
+            padding: 25px 20px;
+            background: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 3px 3px 7px #dddddd;
+            color: #000;
+        }
+
+        .follow-title {
+            font-size: 18px;
+        }
+
+        .follow-link {
+            margin-top: 15px;
+            font-size: 16px;
+            color: inherit;
+            display: inline-block;
+        }
+
+        .follow-link .fb-btn {
+            display: inline-block;
+            border-radius: 10px;
+            background: #85a3e4;
+            box-shadow: 5px 5px 12px #dddddd,
+                -5px -5px 12px #ffffff;
+            padding: 8px 5px;
+            margin-left: 10px;
+            color: #365d8f;
+            font-weight: 600;
+            font-size: 26px;
+        }
+
+        .follow-link .fa {
+            vertical-align: middle;
+        }
+
         @media (max-width:768px) {
             .sec-padding {
                 padding: 100px 0;
+            }
+
+            .full-panel-image .panel-image {
+                position: static;
+                margin-bottom: 30px;
+            }
+
+            .about-blocks {
+                flex-direction: column;
+            }
+
+            .about-block {
+                width: 100%;
+            }
+
+            .about-block+.about-block {
+                margin-left: 0;
             }
         }
     </style>
@@ -162,7 +287,7 @@
 
         <!-- Start about content -->
         <section class="sec-padding about-content pt-0">
-            <div class="container">
+            <div class="container d-none">
                 <div class="sec-title">
                     <h3>Our Story</h3>
                     <h4>One Patient Inspired a New Approach</h4>
@@ -221,95 +346,152 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- End about content -->
-        
-        <!-- Start team area -->
-        <section class="team-area">
-            <div class="anchor" id="team"></div>
-            <div class="container">
-                <div class="sec-title">
-                    <h1>Our Team</h1>
+            <!-- ABOUT -->
+            <div class="full-panel-image image-left">
+                <div class="panel-image">
+                    <img src="https://source.unsplash.com/IuLgi9PWETU/1024x600" alt="Tea">
                 </div>
-                <div class="row">
-                    <div class="team-item clearfix col-sm-12 col-md-6 col-lg-3">
-                        <div class="team-wrap">
-                            <div class="team-image">
-                                <img src="./images/team/person00.webp" alt="team">
-                                <div class="team-img-bg-over"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6"></div>
+                        <div class="col-md-6">
+                            <div class="sec-title">
+                                <h3>About Therapy at Home</h3>
                             </div>
-                            <div class="team-content">
-                                <div class="team-title">Dr. Muddassir <br> Mohiuddin</div>
-                                <div class="team-desg">Psychologist</div>
-                                <div class="team-about"><a
-                                        href="mailto:muddassir@tahcares.com">muddassir@tahcares.com</a></div>
-                                <div class="team-social">
-                                    <div class="social-icon"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-                                    <div class="social-icon"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-                                    <div class="social-icon"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
-                                </div>
+
+                            <div class="sec-desc">
+                                <p>Therapy at Home is a comprehensive therapy private practice in the Greater Milwaukee
+                                    area (located in Greendale, Wisconsin) that emphasizes recovery, prevention and
+                                    wellness. We offer a full range of therapy services, including: occupational,
+                                    speech, massage, and physical therapy... all available in the comfort of your home. 
+                                </p>
+                                <p>We seek to improve the quality of life for patients and their families through
+                                    physical therapy, as well as occupational and speech therapy. More importantly, we
+                                    want to help promote healthy aging to prevent further measures like the move to a
+                                    skilled care facility.</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="team-item clearfix col-sm-12 col-md-6 col-lg-3">
-                        <div class="team-wrap">
-                            <div class="team-image">
-                                <img src="./images/team/team.jpg" alt="team">
-                                <div class="team-img-bg-over"></div>
+                            <div class="sec-title">
+                                <h4>Physical Therapy That Gets You Back to Your Life</h4>
                             </div>
-                            <div class="team-content">
-                                <div class="team-title">Megan <br> Cassidy</div>
-                                <div class="team-desg">Psychologist</div>
-                                <div class="team-about"><a href="mailto:megan@tahcares.com">megan@tahcares.com</a></div>
-                                <div class="team-social">
-                                    <div class="social-icon"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-                                    <div class="social-icon"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-                                    <div class="social-icon"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-item clearfix col-sm-12 col-md-6 col-lg-3">
-                        <div class="team-wrap">
-                            <div class="team-image">
-                                <img src="./images/team/team1.jpg" alt="team">
-                                <div class="team-img-bg-over"></div>
-                            </div>
-                            <div class="team-content">
-                                <div class="team-title">Anne <br> Markofsky</div>
-                                <div class="team-desg">Psychologist</div>
-                                <div class="team-about"><a href="mailto:anne@tahcares.com">anne@tahcares.com</a></div>
-                                <div class="team-social">
-                                    <div class="social-icon"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-                                    <div class="social-icon"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-                                    <div class="social-icon"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-item clearfix col-sm-12 col-md-6 col-lg-3">
-                        <div class="team-wrap">
-                            <div class="team-image">
-                                <img src="./images/team/team2.jpg" alt="team">
-                                <div class="team-img-bg-over"></div>
-                            </div>
-                            <div class="team-content">
-                                <div class="team-title">Lindsey <br> DuPlanty</div>
-                                <div class="team-desg">Psychologist</div>
-                                <div class="team-about"><a href="mailto:lindsey@tahcares.com">lindsey@tahcares.com</a>
-                                </div>
-                                <div class="team-social">
-                                    <div class="social-icon"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-                                    <div class="social-icon"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-                                    <div class="social-icon"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
-                                </div>
+                            <div class="sec-desc">
+                                <p>Many times, an event like an accident or an injury can lead to you needing physical
+                                    therapy. What these events have in common is that they impact your quality of life,
+                                    and we are here to help you get back to your baseline. We understand these
+                                    challenges, and our goal is to not only help you achieve your goals, but to enhance
+                                    them, so you can continue to thrive independently.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- PANELS -->
+            <div class="container">
+                <div class="about-blocks">
+                    <div class="panel panel-default about-block bg-1">
+                        <div class="panel-heading block-head">
+                            <h3 class="h4">For Independent Adults</h3>
+                        </div>
+                        <div class="panel-body block-body">
+                            <h4>Skilled Expertise to Help You Live the Way You Want</h4>
+                            <p>You deserve care that goes above and beyond minimum expectations. Therapy at Home strives
+                                to provide care that is not only life altering, but life changing.</p>
+                            <p>At Therapy at Home, we understand the importance of independence. Preventative wellness
+                                is crucial to helping you maintain your independent lifestyle. We enable you to be more
+                                connected, engaging with the people and activities you love. We work with you to develop
+                                the skills and habits you will need to age healthfully, and continue to choose the home
+                                and life you want.</p>
+                        </div>
+                    </div>
+                    <div class="panel panel-default about-block bg-2">
+                        <div class="panel-heading block-head">
+                            <h3 class="h4">For Families</h3>
+                        </div>
+                        <div class="panel-body block-body">
+                            <h4>Successful Aging in Place</h4>
+                            <p>Here at Therapy at Home ™ , we understand the unique needs of every individual and create
+                                a tailored plan to achieve personal goals related to successful living in place. Our
+                                collaborative team approach and specialized treatment for aging adults and memory care
+                                expertise allows us to work with patients and their families to build plans for success
+                                based on goals that matter most to each individual, such as: traveling, beginning or
+                                resuming hobbies, enjoying leisure activities, playing with grand or
+                                great-grandchildren, and attending important life events.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- EXPERTISE -->
+            <div class="full-panel-image image-right">
+                <div class="panel-image">
+                    <img src="https://source.unsplash.com/IuLgi9PWETU/1024x600" alt="Tea">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="sec-title">
+                                <h3>Skilled Expertise</h3>
+                            </div>
+                            <div class="sec-desc">
+                                <p>Our Therapy at Home service providers bring a wide range of experience, and many have
+                                    dedicated their lives to aging care, completing specialized certifications and
+                                    education on caring for seniors. Beyond that, however, we want to not only serve
+                                    aging adults, we want to do it right.</p>
+                                <p>We are committed to simplifying the process and bringing the difference that matters
+                                    at home with our clinical expertise and knowledge. Many therapy practices make this
+                                    promise, but we also place highest priority on listening to the patients we serve
+                                    and their families.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- ABOUT-EXTRA -->
+            <div class="container">
+                <div class="extra-block">
+                    <div class="panel panel-default">
+
+                        <div class="panel-heading">
+                            <h3 class="h4">What Sets Us Apart</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p class="">We demonstrate our values visually through the Therapy at Home logo, which was
+                                chosen and designed with great care to represent our passion for what we do. </p>
+                            <p class=""> The brain represents our vision of empowering every person we treat to achieve
+                                his or her best quality of life.</p>
+                            <p class=""> The heart represents the love and compassion we have for every individual we
+                                treat through our Enabling Approach <sup>TM</sup></p>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+
+                        <div class="panel-heading">
+                            <h3 class="h4">Therapy at Home Mission and Vision</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p class="">We seek to improve the health and wellness of all the individuals we serve. We
+                                are committed to excellence and compassion by providing the highest level of quality of
+                                care based on evidence. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Facebook -->
+            <div class="container">
+                <div class="follow-container">
+                    <div class="follow-title">To learn more about Therapy at Home and our efforts in the community,
+                        please like</div>
+                    <a class="follow-link" href="https://www.facebook.com/TAHcares/" target="_blenk" rel="no-referrer">
+                        Therapy at Home on
+                        <div class="fb-btn">
+                            <i class="fa fa-fw fa-facebook" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </section>
-        <!-- End team area -->
+        <!-- End about content -->
 
         <!--Start footer area-->
         <footer class="footer-area">

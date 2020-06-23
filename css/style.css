@@ -1256,10 +1256,30 @@ select:focus {
   background: #fff;
   color: #252525;
 }
+.testimonial-carousel .owl-nav {
+  position: absolute;
+  top: 40%;
+  left: -50px;
+  right: -50px;
+  transform: translateY(-50%);
+}
+.testimonial-carousel .owl-nav>div {
+  background-color: transparent !important;
+  color: #666 !important;
+  font-size: 60px !important;
+  transform: scaleX(0.7);
+}
+.testimonial-carousel .owl-prev {
+  float: left;
+}
+.testimonial-carousel .owl-next {
+  float: right;
+}
 .single-testimonial-item {
   overflow: hidden;
-  float: left;
+  width: 350px;
   background: #ffffff;
+  margin: auto;
   margin-bottom: 30px;
   display: block;
   padding: 38px 40px 36px;

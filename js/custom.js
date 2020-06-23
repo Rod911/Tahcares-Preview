@@ -184,11 +184,11 @@ function contactCarousel() {
 
 //=== History Carousel ===
 function galleryCarousel() {
-    if ($('.gallery').length) {
-        $('.gallery').owlCarousel({
+    if ($('.testimonial-carousel').length) {
+        $('.testimonial-carousel').owlCarousel({
             loop:true,
             margin:30,
-            nav:false,
+            nav:true,
             dots: true,
             autoplayHoverPause:false,
             autoplay: 6000,

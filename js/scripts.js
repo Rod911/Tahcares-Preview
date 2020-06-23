@@ -73,8 +73,4 @@ function ready() {
     })
 };
 
-// document.addEventListener('DOMContentLoaded', (event) => {
-//     ready();
-// })
-
-$(window).bind('load', ready());
+$(window).bind('load', ready);
