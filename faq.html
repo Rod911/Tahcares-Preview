@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Responsive stylesheet -->
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- Favicon -->
+	<!-- master stylesheet -->
+	<link rel="stylesheet" href="css/style.css?v=1.8">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="images/favicon/favicon-64.png" sizes="64x64">
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32.png" sizes="32x32">
+	<!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" /> -->
+
+	<title>Tahcares - Therapy at Home</title>
+	<!-- Fixing Internet Explorer-->
+	<!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+	<style>
+		.light-bg {
+			background-color: #adecff;
+			color: #222;
+			margin: 0;
+		}
+
+		.dark-bg {
+			background-color: #158fa5;
+		}
+
+		.panel-group {
+			margin: 30px auto;
+			color: #fff;
+		}
+
+		.panel-group .panel {
+			background-color: transparent;
+			box-shadow: none;
+			border-bottom: 1px solid #dedede;
+			border-radius: 0;
+		}
+
+		.panel-group .panel-heading+.panel-collapse>.panel-body {
+			border-top: none;
+		}
+
+		.panel-group .panel-heading {
+			position: relative;
+			margin-left: 1.8em;
+		}
+
+		.panel-group .panel-heading::before,
+		.panel-group .panel-heading::after {
+			content: "";
+			position: absolute;
+			left: -0.3em;
+			top: 50%;
+			width: 2px;
+			height: 1em;
+			background-color: currentColor;
+			transition: ease-in-out 0.2s transform;
+		}
+
+		.panel-group .panel-heading::before {
+			transform: translateY(-50%);
+		}
+
+		.panel-group .panel-heading::after {
+			transform: translateY(-50%) rotate(-90deg);
+		}
+
+		.panel .panel-title a {
+			display: inline-block;
+			position: relative;
+		}
+
+		.panel .panel-title a::after {
+			content: "";
+			position: absolute;
+			top: 120%;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: currentColor;
+			transform: scaleX(0);
+			transition: ease-in-out 0.2s transform;
+			transform-origin: left;
+		}
+
+		.panel.expanded .panel-title a::after {
+			transform: scaleX(1);
+		}
+
+		.panel.expanded .panel-heading::before {
+			transform: translateY(-50%) rotate(-90deg);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="boxed_wrapper">
+		<!--Start Preloader -->
+		<div class="preloader"></div>
+		<!--End Preloader -->
+
+		<!--Start header area-->
+
+		<div class="anchor" id="about"></div>
+		<!--Start top bar area-->
+		<section class="top-bar-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+						<div class="top-left">
+							<ul class="top-contact-info">
+								<li><span class="flaticon-technology"></span>Phone: <a
+										href="tel:414.210.0088">414.210.0088</a>
+								</li>
+								<li><span class="flaticon-note"></span>Mail: <a
+										href="mailto:mohiuddin@tahcares.com">mohiuddin@tahcares.com</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
+						<div class="top-right clearfix">
+							<ul class="social-links">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End top bar area-->
+
+		<!--Start mainmenu area-->
+		<!-- <section class="mainmenu-area stricky"> -->
+		<section class="mainmenu-area stricky">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 clearfix">
+						<!--Start logo-->
+						<div class="logo pull-left">
+							<a href="index.html">
+								<img src="images/resources/logo.png" alt="Awesome Logo">
+							</a>
+							<!-- <div class="smile">
+	                                <img src="images/resources/smile.png" alt="">
+	                            </div> -->
+						</div>
+						<!--End logo-->
+						<!--Start mainmenu-->
+						<nav class="main-menu pull-left">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="navbar clearfix">
+								<ul class="navigation clearfix">
+									<li class="section-link"><a href="./#home">Home</a></li>
+									<li class="section-link"><a href="./#about">Know TAH</a></li>
+									<li class="section-link"><a href="./#services">Services</a>
+										<!-- <li class="section-link"><a href="#testimonials">Testimonials</a></li> -->
+									<li class="section-link"><a href="./#team">Team</a></li>
+									<li class="section-link"><a href="#">Help</a></li>
+									<!-- <li class=""><a href="#">Infrastructure</a> -->
+									<!-- <ul>
+	                                            <li><a href="events.html">Overview</a></li>
+	                                            <li><a href="event-single.html">Images</a></li>
+	                                        </ul> -->
+									</li>
+									<li class="section-link"><a href="./#blog">Leadership Thoughts</a>
+									<li class="section-link"><a href="./#news">News</a></li>
+									<li class="section-link"><a href="./#contact">Contact</a></li>
+								</ul>
+							</div>
+						</nav>
+						<!--End mainmenu-->
+						<!--Start mainmenu right box-->
+						<div class="mainmenu-right-box pull-right">
+							<!-- <div class="outer-search-box">
+	                        <div class="seach-toggle"><i class="fa fa-search"></i></div>
+	                        <ul class="search-box">
+	                            <li>
+	                                <form method="post" action="index.html">
+	                                    <div class="form-group">
+	                                        <input type="search" name="search" placeholder="Search Here" required>
+	                                        <button type="submit"><i class="fa fa-search"></i></button>
+	                                    </div>
+	                                </form>
+	                            </li>
+	                        </ul>
+	                    </div> -->
+							<div class="appointment-button">
+								<a class="thm-btn bgclr-1" href="./#appointment">Free Consultation</a>
+							</div>
+						</div>
+						<!--End mainmenu right box-->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End mainmenu area-->
+
+		<!-- start faq content -->
+		<section class="">
+			<div class="jumbotron light-bg">
+				<div class="container">
+					<h1>FAQs</h1>
+				</div>
+			</div>
+			<div class="dark-bg">
+				<div class="container">
+					<div class="panel-group" id="faq-list" role="tablist" aria-multiselectable="true">
+						<div class="panel">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+										aria-expanded="true" aria-controls="collapseOne">
+										Can I meet with the team before committing to services?
+									</a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+								aria-labelledby="headingOne">
+								<div class="panel-body">
+									Since we see our patients at home, we are happy to set up a phone conference or
+									virtual meeting if you’d like.
+								</div>
+							</div>
+						</div>
+						<div class="panel">
+							<div class="panel-heading" role="tab" id="headingTwo">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+										href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										How long is therapy needed for your patients?
+									</a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+								aria-labelledby="headingTwo">
+								<div class="panel-body">
+									This is determined by therapists based on medical necessity on a case-by-case basis.
+									Typically our patients are seen by therapists for about 6-8 weeks, but this can
+									vary.
+								</div>
+							</div>
+						</div>
+						<div class="panel">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+										href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										Would patients qualify for continued therapy?
+									</a>
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+								aria-labelledby="headingThree">
+								<div class="panel-body">
+									Patients qualify for continued therapy based on medical necessity.
+								</div>
+							</div>
+						</div>
+						<div class="panel">
+							<div class="panel-heading" role="tab" id="headingFour">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+										href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+										How do you determine what types of therapy a patient needs?
+									</a>
+								</h4>
+							</div>
+							<div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+								aria-labelledby="headingFour">
+								<div class="panel-body">
+									We work with facility staff and family members who refer a patient to therapy for a
+									specific
+									reason following a particular incident or change in status. Based on clinical
+									decision making
+									skills, our therapists can determine if the patient could benefit from other
+									disciplines based on a
+									patient’s strengths and deficit areas.
+								</div>
+							</div>
+						</div>
+						<div class="panel">
+							<div class="panel-heading" role="tab" id="headingFive">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+										href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+										What are your office hours?
+									</a>
+								</h4>
+							</div>
+							<div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
+								aria-labelledby="headingFive">
+								<div class="panel-body">
+									Therapists treat patients from 7AM to 5PM Monday through Friday, but they can make
+									adjustments based on patient preference and availability.  If you are looking to
+									reach office staff,
+									feel free to reach out any time and someone will get back to you within 24 business
+									hours.
+								</div>
+							</div>
+						</div>
+						<div class="panel">
+							<div class="panel-heading" role="tab" id="headingSix">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+										href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+										How far in advance do I need to make an appointment?
+									</a>
+								</h4>
+							</div>
+							<div id="collapseSix" class="panel-collapse collapse" role="tabpanel"
+								aria-labelledby="headingSix">
+								<div class="panel-body">
+									An initial evaluation takes about 1-2 weeks to get scheduled based on therapist
+									availability.
+									Once the initial evaluation is completed, treatments are automatically scheduled
+									with the
+									therapist based on the frequency they set.
+								</div>
+							</div>
+						</div>
+						<div class="panel">
+							<div class="panel-heading" role="tab" id="headingSeven">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+										href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+										How are your services different from services at an outpatient clinic?
+									</a>
+								</h4>
+							</div>
+							<div id="collapseSeven" class="panel-collapse collapse" role="tabpanel"
+								aria-labelledby="headingSeven">
+								<div class="panel-body">
+									Our therapists are able to treat patients in their own environment whether that be
+									at an assisted
+									living facility, or in their own home. All of our therapists are Dementia Care
+									Specialists and focus
+									on caring for the older adult population. Therapy at Home therapists use a
+									collaborative
+									approach to include patients, assisted living nursing, family, MDs, and other
+									therapists to
+									maximize carryover and understanding for everyone involved in a patient’s care.
+								</div>
+							</div>
+						</div>
+						<div class="panel">
+							<div class="panel-heading" role="tab" id="headingEight">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+										href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+										How do you help patients with goal setting?
+									</a>
+								</h4>
+							</div>
+							<div id="collapseEight" class="panel-collapse collapse" role="tabpanel"
+								aria-labelledby="headingEight">
+								<div class="panel-body">
+									Therapists set goals based on their initial assessment in collaboration with the
+									patient’s
+									important functional and personal goals. Patients and therapists work towards these
+									goals
+									during therapy and can be adjusted and updated based on an individual’s progress.
+								</div>
+							</div>
+						</div>
+						<div class="panel">
+							<div class="panel-heading" role="tab" id="headingNine">
+								<h4 class="panel-title">
+									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+										href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+										What service area(s) do you service?
+									</a>
+								</h4>
+							</div>
+							<div id="collapseNine" class="panel-collapse collapse" role="tabpanel"
+								aria-labelledby="headingNine">
+								<div class="panel-body">
+									Greendale, Greenfield, Franklin, Muskego, Brookfield, Elm Grove, Wauwatosa, Cudahy,
+									St.
+									Francis, South Milwaukee, and Oak Creek.
+									<br>
+									Exceptions to the service area can potentially be made with additional cost.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end faq content -->
+
+		<!--Start footer area-->
+		<footer class="footer-area">
+			<div class="anchor" id="contact"></div>
+			<div class="container">
+				<div class="row">
+					<!--Start single footer widget-->
+					<div class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
+						<div class="single-footer-widget martop-minus pd-bottom50">
+							<div class="footer-logo">
+								<a href="index.html">
+									<img src="images/resources/logo.png" alt="Awesome Footer Logo">
+								</a>
+							</div>
+							<!-- <div class="our-info">
+	                                        <p></p>
+	                                    </div> -->
+							<ul class="footer-contact-info">
+								<li>
+									<div class="icon-holder">
+										<span class="flaticon-arrows"></span>
+									</div>
+									<div class="text-holder">
+										<h5>Address: 7711 Freeland Court Greendale, <br> WI 53129</h5>
+									</div>
+								</li>
+								<li>
+									<div class="icon-holder">
+										<span class="flaticon-technology"></span>
+									</div>
+									<div class="text-holder">
+										<h5>Phone: <a href="tel:+414.210.0088">414.210.0088</a></h5>
+									</div>
+								</li>
+								<li>
+									<div class="icon-holder">
+										<span class="flaticon-note"></span>
+									</div>
+									<div class="text-holder">
+										<h5>Email: <a href="mailto:mohiuddin@tahcares.com">mohiuddin@tahcares.com</a>
+										</h5>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--End single footer widget-->
+					<!--Start single footer widget-->
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<div class="single-footer-widget pd-bottom50">
+							<div class="title">
+								<h3>Useful Links</h3>
+								<span class="border"></span>
+							</div>
+							<ul class="usefull-links">
+								<li><a href="#home">Home</a></li>
+								<li><a href="#about">Know TAH</a></li>
+								<li><a href="#services">Services</a></li>
+								<!-- <li><a href="#testimonials">Testomonials</a></li> -->
+								<!-- <li><a href="#">Insfrastructure</a></li> -->
+								<li><a href="#team">Team</a></li>
+								<li><a href="#">Help</a></li>
+								<li><a href="#blog">Leadership Thoughts</a></li>
+								<li><a href="#news">News</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<!--End single footer widget-->
+					<!--Start single footer widget-->
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+						<div class="single-footer-widget clearfix" style="margin-bottom: 30px;">
+							<div class="title">
+								<h3>Help</h3>
+							</div>
+							<ul class="working-hours help-links">
+								<li><a href="./faq.html">FAQs</a></li>
+								<li><a href="#">Insurance / Referrals</a></li>
+							</ul>
+						</div>
+						<div class="single-footer-widget clearfix">
+							<div class="title">
+								<h3>Working Hours</h3>
+							</div>
+							<ul class="working-hours">
+								<li>Mon-Fri: <span>8am-7pm</span></li>
+								<li>Saturday: <span>10-4pm</span></li>
+								<li>Sunday: <span class="closed">Closed</span></li>
+							</ul>
+						</div>
+					</div>
+					<!--End single footer widget-->
+				</div>
+			</div>
+		</footer>
+		<!--End footer area-->
+
+		<!--Start footer bottom area-->
+		<section class="footer-bottom-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<div class="copyright-text">
+							<p>© 2020 Tahcares</a></p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<ul class="footer-social-links">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<p class="powered-by">Powered by <a href="#"><img src="./images/resources/26_footer.png"
+									alt="Steed 26" class="steed-logo"></a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End footer bottom area-->
+
+
+	</div>
+
+	<!--Scroll to top-->
+	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-chevron-circle-up"></span></div>
+
+	<!-- main jQuery -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!-- Wow Script -->
+	<script src="js/wow.js"></script>
+	<!-- bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+
+	<script>
+		$('#faq-list').on('show.bs.collapse', function (e) {
+			$("#faq-list .collapse").collapse('hide')
+			e.target.parentNode.classList.add('expanded');
+		});
+		$('#faq-list').on('hide.bs.collapse', function (e) {
+			e.target.parentNode.classList.remove('expanded');
+		});
+	</script>
+
+	<!-- thm custom script -->
+	<script src="js/custom.js?v=1.8"></script>
+
+	<!-- <script src="js/scripts.js?v=1.8"></script> -->
+
+</body>
+
+</html>
